@@ -31,21 +31,21 @@ const Footer = (props) => {
       </div>
       <div className={styles.row3}>
         <div className={styles.social}>
-          <img
+          <a href="https://www.instagram.com/beries.eth/" target="_blank"><img
             src="../assets/insta-icon-200h.webp"
             className={styles.footerLogo}
-            href="https://www.instagram.com/beries.eth/" target="_blank"
-          />
-          <img
+            
+          /></a> 
+          <a href="https://medium.com/@BeRies" target="_blank"><img
             src="../assets/medium-icon-200h.webp"
             className={styles.footerLogo}
-            href="https://medium.com/@BeRies" target="_blank"
-          />
-          <img
+            
+          /></a> 
+          <a href="https://twitter.com/0xberies" target="_blank"  ><img
             src="../assets/twitter-icon-200h.webp"
             className={styles.footerLogo}
-            href="https://twitter.com/0xberies" target="_blank"  
-          />
+
+          /></a> 
         </div>
         <span
           className={styles.footerLink}

@@ -118,6 +118,7 @@
     .row1{
         width: 100%;
         gap:10px;
+        height: auto;
     }
     .row2{
         width: 100%;
@@ -143,6 +144,7 @@
         padding-left: var(--dl-space-space-unit);
         padding-right: var(--dl-space-space-unit);
         padding-top: var(--dl-space-space-unit);
+        padding-bottom: 270px;
     }
   }
 
