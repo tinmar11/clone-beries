@@ -31,7 +31,7 @@ const MintPack1 = (props) => {
             />
           </div>
           <div className="mint-pack1-container3">
-            <span className="h3">Pack 1</span>
+            <h1 className="h1">Pack 1</h1>
             <span className="mint-pack1-text1 paragraph">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
@@ -54,7 +54,7 @@ const MintPack1 = (props) => {
           id="item-of-this-pack"
           className="mint-pack1-item-of-this-pack"
         >
-          <h1 className="mint-pack1-text2 H1">Item of this pack</h1>
+          <h1 id="white" className="h2">Item of this pack</h1>
           <div className="mint-pack1-container4">
             <div className="mint-pack1-container5">
               <img
@@ -62,7 +62,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image1"
               />
-              <span className="mint-pack1-text3">Item title</span>
+              <span id="white"className="h3">Item title</span>
             </div>
             <div className="mint-pack1-container6">
               <img
@@ -70,7 +70,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image2"
               />
-              <span className="mint-pack1-text4">Item title</span>
+              <span id="white"className="h3">Item title</span>
             </div>
             <div className="mint-pack1-container7">
               <img
@@ -78,7 +78,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image3"
               />
-              <span className="mint-pack1-text5">Item title</span>
+              <span id="white"className="h3">Item title</span>
             </div>
           </div>
         </section>
@@ -131,7 +131,7 @@ const MintPack1 = (props) => {
             gap: 10px;
             flex: 0 0 auto;
             width: 40%;
-            height: auto;
+            height: 80vh;
             display: flex;
             align-self: center;
             align-items: flex-start;

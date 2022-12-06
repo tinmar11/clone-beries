@@ -175,15 +175,16 @@ const Burn = () => {
           <meta property="og:title" content="Burn - BeRies" />
         </Head>
         <Navbar rootClassName="navbar-root-class-name4"></Navbar>
-        <section id="Title" className={styles.burnContainer1}>
+       
+
+        {isConnected ? (
+          <div className={styles.div}>
+             <section id="Title" className={styles.burnContainer1}>
           <h1 className={styles.burnText}>Burn for shipping</h1>
           <span className={styles.paragraph}>
             Burn your NFT to receive the BeRies pack you choose.
           </span>
         </section>
-
-        {isConnected ? (
-          <div className={styles.div}>
             <div className={styles.blueContainer}>
               <div className={styles.blueContainerRight}>
                 <div className={styles.burnInputContainer}>
@@ -388,11 +389,17 @@ const Burn = () => {
             </form>
           </div>
         ) : (
-          <div className={styles.blueContainer}>
-            <h1 className={styles.pleaseConnect}>
-              Please connect your wallet to continue.
-            </h1>
-          </div>
+          <div className={styles.container}>
+      <img
+        src="/assets/plug.webp"
+        className={styles.plug}
+      />
+      <div className={styles.connectContainer}>
+        <span className={styles.text1}>Connect your wallet</span>
+        <span className={styles.text2}>If you want go on this page.</span>
+      </div>
+    </div>
+
         )}
         <Footer rootClassName="footer-root-class-name4"></Footer>
       </div>

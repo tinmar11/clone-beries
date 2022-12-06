@@ -15,7 +15,7 @@ const KeyOwner = (props) => {
         </Head>
         <Navbar rootClassName="navbar-root-class-name1"></Navbar>
         <section id="title section" className="key-owner-title-section">
-          <h1 className="H1 key-owner-text">BeRies key owner</h1>
+          <h1 id="blue"className="h1">BeRies key owner</h1>
           <span className="key-owner-text01 paragraph">
             <span>
               If you have the BeRies key, this page is for you.
@@ -53,7 +53,7 @@ const KeyOwner = (props) => {
             />
           </div>
           <div className="key-owner-container2">
-            <h1 className="h3">Claim your NFT</h1>
+            <h1 id="white"className="h2">Claim your NFT</h1>
             <span className="paragraph2">
               You can claim all NFT’s of all the packs, for free.
             </span>

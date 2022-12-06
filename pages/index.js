@@ -165,17 +165,13 @@ const Home = (props) => {
             width: 100%;
             height: 550px;
             display: flex;
-            overflow: hidden;
-            padding: var(--dl-space-space-threeunits);
-            
+            overflow: hidden;            
             flex-direction: column;
             justify-content: center;
             background-color: #0000ff;
             padding: 0px;
           }
-          .arrowr{
-            transform: rotate(180deg);
-          }
+ 
           .leftArrowContainer{
             position: absolute;
             height: 500px;
@@ -432,10 +428,7 @@ const Home = (props) => {
             font-size: 20px;
           }
           @media (max-width: 767px) {
-            .home-slider {
-              padding-left: var(--dl-space-space-twounits);
-              padding-right: var(--dl-space-space-twounits);
-            }
+
             .home-steps {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
@@ -573,12 +566,7 @@ const Home = (props) => {
             }
           }
           @media (max-width: 479px) {
-            .home-slider {
-              padding-top: var(--dl-space-space-twounits);
-              padding-left: var(--dl-space-space-unit);
-              padding-right: var(--dl-space-space-unit);
-              padding-bottom: var(--dl-space-space-twounits);
-            }
+
             .home-steps {
               padding-top: var(--dl-space-space-twounits);
               padding-left: var(--dl-space-space-unit);

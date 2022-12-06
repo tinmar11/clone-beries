@@ -100,24 +100,86 @@ button {
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
+.h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+}
 
-.H1 {
-  color: rgb(0, 0, 255);
-  font-size: 48px;
+.h1#blue{
+  color:rgb(0, 0, 255)
+}
+
+.h2 {
+  color: #0000ff;
+  font-size: 40px;
   align-self: flex-start;
   font-style: normal;
   text-align: left;
   font-weight: 900;
   margin-bottom: var(--dl-space-space-unit);
 }
+.h2#white{
+  color: white;
+}
+
+
+
+.h2#white-center{
+  text-align: center;
+  color: white;
+  align-self: center;
+}
+
+
+
+@media (max-width: 767px) {
+  .h2 {
+  font-size: 32px;
+  
+  }
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.h3#white {
+  color: white;
+}
+
+
+@media (max-width: 767px) {
+  .h3 {
+  font-size: 20px;
+  }
+}
+
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.text#black {
+  color:#000000;
+}
+
+.text#blue {
+  color:#0000ff;
+}
+
+
+
 .paragraph {
   color: #0000ff;
   font-size: 24px;
 }
-.h3 {
-  color: #ffffff;
-  font-size: 34px;
-}
+
 .paragraph2 {
   color: rgb(255, 255, 255);
   font-size: 18px;
@@ -302,3 +364,4 @@ button {
   font-style: normal;
   font-weight: 400;
 }
+

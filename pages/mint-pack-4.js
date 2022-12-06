@@ -28,7 +28,7 @@ const MintPack4 = (props) => {
             />
           </div>
           <div className="mint-pack4-container3">
-            <span className="h3">Pack 4</span>
+            <h1 className="h1">Pack 4</h1>
             <span className="mint-pack4-text1 paragraph">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
@@ -123,7 +123,7 @@ const MintPack4 = (props) => {
             gap: 10px;
             flex: 0 0 auto;
             width: 40%;
-            height: auto;
+            height: 80vh;
             display: flex;
             align-self: center;
             align-items: flex-start;

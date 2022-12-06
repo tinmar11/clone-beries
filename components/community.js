@@ -8,47 +8,47 @@ const Community = () => {
         <div className={styles.imageWrapperOuter}>
           <div class={styles.imageWrapperInner}>
             <div className={styles.ImageRowWrapper1}>
-              <div className={styles.image}></div>
-              <div className={styles.image2}></div>
-              <div className={styles.image3}></div>
-              <div className={styles.image4}></div>
-              <div className={styles.image5}></div>
-              <div className={styles.image6}></div>
+              <div id={styles.i1} className={styles.image}></div>
+              <div id={styles.i2} className={styles.image}></div>
+              <div id={styles.i3} className={styles.image}></div>
+              <div id={styles.i4} className={styles.image}></div>
+              <div id={styles.i5} className={styles.image}></div>
+              <div id={styles.i6} className={styles.image}></div>
             </div>
             <div className={styles.ImageRowWrapper2}>
-              <div className={styles.image7}></div>
-              <div className={styles.image8}></div>
-              <div className={styles.image9}></div>
-              <div className={styles.image10}></div>
-              <div className={styles.image11}></div>
-              <div className={styles.image12}></div>
+              <div id={styles.i7} className={styles.image}></div>
+              <div id={styles.i8} className={styles.image}></div>
+              <div id={styles.i9} className={styles.image}></div>
+              <div id={styles.i10} className={styles.image}></div>
+              <div id={styles.i11} className={styles.image}></div>
+              <div id={styles.i12} className={styles.image}></div>
             </div>
             <div className={styles.ImageRowWrapper3}>
-              <div className={styles.image13}></div>
-              <div className={styles.image14}></div>
-              <div className={styles.image15}></div>
-              <div className={styles.image16}></div>
-              <div className={styles.image17}></div>
-              <div className={styles.image18}></div>
+              <div id={styles.i13} className={styles.image}></div>
+              <div id={styles.i14} className={styles.image}></div>
+              <div id={styles.i15} className={styles.image}></div>
+              <div id={styles.i16} className={styles.image}></div>
+              <div id={styles.i17} className={styles.image}></div>
+              <div id={styles.i18} className={styles.image}></div>
             </div>
             <div className={styles.ImageRowWrapper4}>
-              <div className={styles.image25}></div>
-              <div className={styles.image26}></div>
-              <div className={styles.image27}></div>
-              <div className={styles.image28}></div>
-              <div className={styles.image29}></div>
-              <div className={styles.image30}></div>
+              <div id={styles.i19} className={styles.image}></div>
+              <div id={styles.i20} className={styles.image}></div>
+              <div id={styles.i21} className={styles.image}></div>
+              <div id={styles.i22} className={styles.image}></div>
+              <div id={styles.i23} className={styles.image}></div>
+              <div id={styles.i24} className={styles.image}></div>
             </div>
           </div>
         </div>
         <div className={styles.divBlock14}>
-          <div className={styles.h2}>
+          <div id="white-center"className="h2">
             Join the
-            <br />
-            BeRies ✨<br />
+            <br/>
+            BeRies ✨<br/>
             community
           </div>
-          <a href="https://www.instagram.com/beries.eth/">
+          <a href="https://www.instagram.com/beries.eth/" target="_blank" >
             <div className={styles.divBlock15}>
               <img
                 src="/assets/6366475ccb0f68c0ec5b514e_insta.png"
