@@ -86,9 +86,61 @@ const NavigationLinksMobile = (props) => {
         <Link href="/key-owner">
           <a className="navigation-links-link1 nav-link">{props.text2}</a>
         </Link>
+        
       </nav>
+      <div className="row3">
+        <div className="social">
+          <a href="https://www.instagram.com/beries.eth/" target="_blank"><img
+            src="../assets/insta-icon-200h.webp"
+            className="footerLogo"
+            
+          /></a> 
+          <a href="https://medium.com/@BeRies" target="_blank"><img
+            src="../assets/medium-icon-200h.webp"
+            className="footerLogo"
+            
+          /></a> 
+          <a href="https://twitter.com/0xberies" target="_blank"  ><img
+            src="../assets/twitter-icon-200h.webp"
+            className="footerLogo"
+
+          /></a> 
+        </div>
+        <span
+          className="footerLink"
+        >
+          BeRies is Worldwide
+        </span>
+      </div>
+       
       <style jsx>
         {`
+          .row3 {
+            display: flex;
+            text-align: right;
+            align-self: stretch;
+            justify-content: space-between
+            width: 100vw;
+            flex-direction: row;
+            color: #0000ff;
+            margin-top: 90%;
+ 
+          }
+          .social {
+            gap: 20px;
+            display: flex;
+            width: 50vw
+          }
+          .footerLogo {
+            width: 21px;
+          }
+          .footerLink {
+            font-size: 16px;
+            font-weight: 500;
+            width:50vw;
+
+          }
+
           .navigation-links-nav {
             flex: 0 0 auto;
             display: flex;
