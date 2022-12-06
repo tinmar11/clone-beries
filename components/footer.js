@@ -14,7 +14,7 @@ const Footer = (props) => {
         <div
           className={styles.linkContainer}
         >
-          <a className={styles.footerLink} href="mailto: contact@beries.xyz">Contact BeRies <span style={{fontWeight: "black"}}> <i>here</i></span> </a>
+          <a className={styles.footerLink} href="mailto: contact@beries.xyz">Contact BeRies <span style={{fontWeight: "800"}}> <i>here</i></span> </a>
           <a className={styles.footerLink} href="https://medium.com/@BeRies" target="_blank">Documentation</a>
           <a className={styles.footerLink} href="https://blueberry.club/" target="_blank">Partner Blueberry</a>
         </div>
