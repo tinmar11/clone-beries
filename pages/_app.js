@@ -1,6 +1,6 @@
 import "./style.css";
 import "@rainbow-me/rainbowkit/styles.css";
-
+import Head from "next/head";
 import {
   getDefaultWallets,
   RainbowKitProvider,
@@ -10,6 +10,8 @@ import {
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
+
+
 
 const { chains, provider } = configureChains(
   [chain.goerli],
@@ -44,6 +46,7 @@ export default function MyApp({ Component: Component, pageProps: pageProps }) {
           fontStack: "system",
           overlayBlur: "small",
         })}
+        
       >
         {" "}
         {}
@@ -52,3 +55,4 @@ export default function MyApp({ Component: Component, pageProps: pageProps }) {
     </WagmiConfig>
   );
 }
+
