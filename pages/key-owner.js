@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+
 
 const KeyOwner = (props) => {
   return (
@@ -14,51 +14,34 @@ const KeyOwner = (props) => {
           <meta />
         </Head>
         <Navbar rootClassName="navbar-root-class-name1"></Navbar>
-        <section id="title section" className="key-owner-title-section">
+        <section className="key-owner-title-section">
           <h1 id="blue"className="h1">BeRies key owner</h1>
-          <span className="key-owner-text01 paragraph">
-            <span>
-              If you have the BeRies key, this page is for you.
-              <span
-                dangerouslySetInnerHTML={{
-                  __html: " ",
-                }}
-              />
-            </span>
-            <br></br>
-            <span>If you want to get it, try by following this link.</span>
-          </span>
-          <span className="key-owner-text05 paragraph">
-            <span>
-              Before the release of Drop 1, there will be the release of a
-              unique NFT, giving access to a large number of advantages that
-              only the holder of this NFT will have. If you really believe in
-              BeRies and its team, that you think the project is solid and that
-              the team is determined to carry it out, then this NFT will clearly
-              allow you to join the team, having access to the backstage of the
-              construction.
-            </span>
-            <br></br>
-          </span>
-          <span className="paragraph">
-            For now, there are no plans for such NFTs in the future.
-          </span>
+          <p className="paragraph">
+          If you have the BeRies key, this page is for you. <br></br>
+          If you want to get it, try by following this link.
+          </p>
+          <p id="medium" className="paragraph">
+          Before the release of Drop 1, there will be the release of a unique NFT, giving access to a large number of advantages that only the holder of this NFT will have. If you really believe in BeRies and its team, that you think the project is solid and that the team is determined to carry it out, then this NFT will clearly allow you to join the team, having access to the backstage of the construction.
+          </p>
+          <p id="lightitalic" className="paragraph">
+          For now, there are no plans for such NFTs in the future.
+          </p>
         </section>
-        <main id="claim your nft" className="key-owner-claim-your-nft">
+
+         <main id="claim your nft" className="key-owner-claim-your-nft">
           <div className="key-owner-container1">
             <img
-              alt="image"
               src="/assets/key-600w.png"
               className="key-owner-image"
             />
           </div>
           <div className="key-owner-container2">
-            <h1 id="white"className="h2">Claim your NFT</h1>
+            <h2 id="white" className="h2">Claim your NFT</h2>
             <span className="paragraph2">
               You can claim all NFT’s of all the packs, for free.
             </span>
             <span className="key-owner-text11 paragraph2">
-              *As a reminder, unique items will be added to your package, this
+              As a reminder, unique items will be added to your package, this
               is part of the advantages of the key.
             </span>
 
@@ -70,10 +53,56 @@ const KeyOwner = (props) => {
             </span>
           </div>
         </main>
+
+      <div className="exclusive-items-container">
+        <h3 className="h3">Exclusive items of this drop</h3>
+        <div className="item-container">
+          <div className="item">
+          <img className="image" src="./assets/tee burn-600w.png"></img>
+            <span className="itemTitle">BeRies Classic logo *Team only</span>
+          </div>
+          <div className="item">
+          <img className="image" src="./assets/tee burn-600w.png"></img>
+            <span className="itemTitle">BeRies Team & Friend’s</span>
+          </div>
+        </div>
+      </div>
+        
         <Footer rootClassName="footer-root-class-name1"></Footer>
       </div>
       <style jsx>
         {`
+        .item-container{
+          display: flex;
+          height: 100%;
+          align-items: flex-start;
+          flex-direction: row;
+          margin-top: 30px;
+          
+        }
+        .item{
+          display: flex;
+          height: 100%;
+          align-items: center;
+          flex-direction: column;
+          gap: 20px;
+        }
+        .image{
+          width: 70%;
+          object-fit: cover;
+        }
+          .exclusive-items-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffffff;
+            margin-top: var(--dl-space-space-twounits);
+            margin-bottom: var(--dl-space-space-twounits)
+          }
+
+
           .key-owner-container {
             width: 100%;
             display: flex;
@@ -107,10 +136,10 @@ const KeyOwner = (props) => {
             display: flex;
             align-self: stretch;
             align-items: flex-start;
-            padding-top: var(--dl-space-space-fourunits);
+            padding-top: var(--dl-space-space-twounits);
             padding-left: 140px;
             padding-right: 140px;
-            padding-bottom: var(--dl-space-space-fourunits);
+            padding-bottom: var(--dl-space-space-twounits);
             justify-content: space-between;
             background-color: #0000ff;
           }
@@ -128,6 +157,7 @@ const KeyOwner = (props) => {
             height: auto;
             align-self: center;
             object-fit: cover;
+            transform : rotate(90deg) scaleY(-1);
           }
           .key-owner-container2 {
             gap: 10px;
@@ -143,6 +173,7 @@ const KeyOwner = (props) => {
           .key-owner-text11 {
             font-style: normal;
             font-weight: 300;
+            font-style: italic;
           }
           .key-owner-button {
             border-width: 0px;
@@ -185,7 +216,26 @@ const KeyOwner = (props) => {
             .key-owner-container2 {
               width: 100%;
             }
+
+            .item-container{
+              flex-direction: column;
+              gap: 80px
+
+            }
+            .item{
+              width: 100%;
+            }
           }
+          .key-owner-image {
+            align-self: center;
+            margin-bottom:
+          }
+          .key-owner-container1 {
+            width: auto;
+            height: 100px;
+          }
+
+
           @media (max-width: 479px) {
             .key-owner-title-section {
               width: auto;
@@ -202,12 +252,8 @@ const KeyOwner = (props) => {
               padding: var(--dl-space-space-twounits);
               flex-direction: column;
             }
-            .key-owner-container1 {
-              width: auto;
-            }
-            .key-owner-image {
-              align-self: center;
-            }
+
+
           }
         `}
       </style>

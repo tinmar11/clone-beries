@@ -102,8 +102,9 @@ button {
 }
 .h1 {
   font-size: 40px;
-  color: white;
-  font-weight: 700;
+  font-weight: 900;
+  margin-bottom: 20px;
+
 }
 
 .h1#blue{
@@ -112,7 +113,7 @@ button {
 
 .h2 {
   color: #0000ff;
-  font-size: 40px;
+  font-size: 34px;
   align-self: flex-start;
   font-style: normal;
   text-align: left;
@@ -131,32 +132,19 @@ button {
   align-self: center;
 }
 
-
-
-@media (max-width: 767px) {
-  .h2 {
-  font-size: 32px;
-  
-  }
-}
-
 .h3 {
   font-size: 24px;
   font-weight: 700;
-  color: black;
-  margin-bottom: 5px;
+  color: #0000ff;
+  margin-bottom: 20px;
+
 }
 
 .h3#white {
   color: white;
+  
 }
 
-
-@media (max-width: 767px) {
-  .h3 {
-  font-size: 20px;
-  }
-}
 
 
 .text {
@@ -173,11 +161,40 @@ button {
   color:#0000ff;
 }
 
+.itemTitle{
+  font-size: 18px;
+  font-weight: 400;
+  color:#0000ff;
 
+}
+
+.itemTitle#white{
+  color: white;
+}
 
 .paragraph {
   color: #0000ff;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: normal;
+
+}
+
+.paragraph#white{
+  color: white;
+}
+
+.paragraph#lightitalic{
+  font-style: italic;
+  
+}
+.paragraph#whiteitalic{
+  font-style: italic;
+  color: white;
+  
+}
+.paragraph#medium{
+  font-weight: 500;
 }
 
 .paragraph2 {
@@ -311,16 +328,29 @@ button {
   line-height: 21px;
 }
 
-@media (max-width: 991px) {
-  .H1 {
-    text-align: center;
-  }
-}
+
 @media (max-width: 767px) {
   .nav-link {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
+  .h2 {
+    font-size: 32px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .paragraph2 {
+    font-size: 16px;
+  }
+  .itemTitle{
+    font-size: 16px;
+  }
+  
+  
 }
 
 @font-face {
@@ -370,4 +400,12 @@ button {
   src: url("../fonts/Satoshi-BlackItalic.ttf");
   font-style: italic;
   font-weight: 800;
+}
+
+@font-face {
+  font-family: Satoshi;
+  src: url("../fonts/Satoshi-LightItalic.ttf");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
 }
