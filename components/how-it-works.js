@@ -18,7 +18,7 @@ const HowItWorks = (props) => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3 className="h3">{props.heading1}</h3>
+              <h3>{props.heading1}</h3>
               <span id="black" className="text">
                 <span>
                   1Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs
@@ -38,7 +38,7 @@ const HowItWorks = (props) => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3 className="h3">{props.heading2}</h3>
+              <h3>{props.heading2}</h3>
               <span id="black" className="text">
                 <span>
                   2Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs
@@ -58,7 +58,7 @@ const HowItWorks = (props) => {
               </div>
             </div>
             <div className="how-it-works-container2">
-              <h3 className="h3">{props.heading3}</h3>
+              <h3>{props.heading3}</h3>
               <span id="black" className="text">
                 <span>
                   3Ciliciam vero, quae Cydno amni exultat, Tarsus nobilitat, urbs

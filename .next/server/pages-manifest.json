@@ -2,5 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/key-owner": "pages/key-owner.js"
+  "/mint-pack-2": "pages/mint-pack-2.js",
+  "/mint-pack-1": "pages/mint-pack-1.js",
+  "/mint-pack-3": "pages/mint-pack-3.js",
+  "/key-owner": "pages/key-owner.js",
+  "/burn": "pages/burn.js"
 }

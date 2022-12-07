@@ -124,7 +124,20 @@ button {
   color: white;
 }
 
+.packTitle{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+}
 
+.packDesc#blue{
+  font-size: 24px;
+  color: #0000ff;
+}
+.packDesc#white{
+  font-size: 24px;
+  color: white;
+}
 
 .h2#white-center{
   text-align: center;
@@ -328,6 +341,12 @@ button {
   line-height: 21px;
 }
 
+.packImage {
+  width: 70%;
+  height: auto;
+  align-self: center;
+  object-fit: cover;
+}
 
 @media (max-width: 767px) {
   .nav-link {
@@ -348,6 +367,10 @@ button {
   }
   .itemTitle{
     font-size: 16px;
+  }
+  .packImage {
+    height: auto;
+    width: 70%;
   }
   
   

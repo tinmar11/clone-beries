@@ -6,6 +6,7 @@ import { mintFunction } from "../functions/mintFunction.js";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount, useBalance } from "wagmi";
 
+
 const MintPack1 = (props) => {
   const { address, isConnected } = useAccount();
 
@@ -25,14 +26,13 @@ const MintPack1 = (props) => {
         <main id="mint pack 1 container" className="mint-pack1-container1">
           <div className="mint-pack1-container2">
             <img
-              alt="image"
               src="/assets/nft-boite-pack-1-1500h.webp"
-              className="mint-pack1-image"
+              className="packImage"
             />
           </div>
           <div className="mint-pack1-container3">
-            <h1 className="h1">Pack 1</h1>
-            <span className="mint-pack1-text1 paragraph">
+            <h1 className="packTitle">Pack 1</h1>
+            <span id="white"className="packDesc">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
             {isConnected ? (<button
@@ -59,7 +59,7 @@ const MintPack1 = (props) => {
           id="item-of-this-pack"
           className="mint-pack1-item-of-this-pack"
         >
-          <h1 id="white" className="h2">Item of this pack</h1>
+          <h2 id="white" className="h2">Item of this pack</h2>
           <div className="mint-pack1-container4">
             <div className="mint-pack1-container5">
               <img
@@ -67,7 +67,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image1"
               />
-              <span id="white"className="h3">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack1-container6">
               <img
@@ -75,7 +75,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image2"
               />
-              <span id="white"className="h3">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack1-container7">
               <img
@@ -83,7 +83,7 @@ const MintPack1 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack1-image3"
               />
-              <span id="white"className="h3">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
           </div>
         </section>
@@ -164,7 +164,6 @@ const MintPack1 = (props) => {
             height: auto;
             display: flex;
             align-self: stretch;
-            margin-top: 40px;
             align-items: flex-start;
             padding-left: 140px;
             margin-bottom: 40px;
@@ -186,6 +185,8 @@ const MintPack1 = (props) => {
             align-self: stretch;
             align-items: flex-start;
             justify-content: center;
+            margin-top:20px;
+
           }
           .mint-pack1-container5 {
             flex: 1;
@@ -251,11 +252,7 @@ const MintPack1 = (props) => {
               height: 100%;
               justify-content: center;
             }
-            .mint-pack1-image {
-              width: 100%;
-              height: auto;
-              align-self: center;
-            }
+
             .mint-pack1-container3 {
               width: 40%;
               align-self: center;
@@ -280,10 +277,7 @@ const MintPack1 = (props) => {
               width: 100%;
               height: auto;
             }
-            .mint-pack1-image {
-              width: 70%;
-              height: auto;
-            }
+
             .mint-pack1-container3 {
               width: 70%;
               height: auto;
@@ -337,15 +331,14 @@ const MintPack1 = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
+                  height: 100vh;
+
             }
             .mint-pack1-container2 {
               width: 100%;
-              height: 50%;
+              height: 30%;
             }
-            .mint-pack1-image {
-              height: auto;
-              padding-top: var(--dl-space-space-threeunits);
-            }
+
             .mint-pack1-container3 {
               gap: 20;
               width: 100%;
@@ -392,9 +385,7 @@ const MintPack1 = (props) => {
             .mint-pack1-container2 {
               height: auto;
             }
-            .mint-pack1-image {
-              width: 100%;
-            }
+
             .mint-pack1-container3 {
               gap: 20px;
               width: 100%;
