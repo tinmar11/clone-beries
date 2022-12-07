@@ -136,7 +136,7 @@ const NavigationLinksMobile = (props) => {
           }
           .footerLink {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             width:50vw;
 
           }
@@ -203,7 +203,7 @@ const NavigationLinksMobile = (props) => {
             display: flex;
             font-size: 30px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
           }
           .navigation-links-dropdown1 {
             cursor: pointer;
@@ -239,8 +239,6 @@ const NavigationLinksMobile = (props) => {
           .navigation-links-link1 {
             text-decoration: none;
             font-weight: 600;
-
-
           }
 
           @media (max-width: 767px) {
@@ -252,7 +250,7 @@ const NavigationLinksMobile = (props) => {
             .navigation-links-link1 {
               font-size: 35px;
               color: #0000ff;
-              
+              font-weight: 600;
             }
 
             .navigation-links-text {
