@@ -39,12 +39,17 @@ const MintPack2 = (props) => {
             {isConnected ? (<button
               id="mint pack 2 button"
               type="button"
-              className="mint-pack2-mint-pack-2-button mint-button button"
+              className="mint-pack1-mint-pack-1-button mint-button button"
               onClick={handleClick}
             >
               Mint for 0.1 ETH
             </button>) : (
-              <ConnectButton />
+              <button
+              id="mint pack 2 button"
+              type="button"
+              className="mint-pack2-mint-pack-2-button mint-button button disabled">
+              Please connect your wallet
+            </button>
             )}
             <a href="#item-of-this-pack" className="mint-pack2-link">
               See clothes here
@@ -88,6 +93,9 @@ const MintPack2 = (props) => {
 
       <style jsx>
         {`
+          .disabled{
+            cursor: not-allowed;
+          }
           .mint-pack2-container {
             width: 100%;
             display: flex;
@@ -277,6 +285,8 @@ const MintPack2 = (props) => {
             }
             .mint-pack2-container3 {
               width: 70%;
+              height: auto;
+              padding-bottom: var(--dl-space-space-threeunits);
             }
             .mint-pack2-item-of-this-pack {
               padding-left: var(--dl-space-space-threeunits);

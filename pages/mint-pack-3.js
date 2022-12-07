@@ -3,8 +3,12 @@ import Head from "next/head";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { mintFunction } from "../functions/mintFunction.js";
+import { useAccount, useBalance } from "wagmi";
 
 const MintPack3 = (props) => {
+
+  const { address, isConnected } = useAccount();
+
   const handleClick = () => {
     mintFunction(2, 1);
   };
@@ -32,14 +36,21 @@ const MintPack3 = (props) => {
             <span className="mint-pack3-text1 paragraph">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
-            <button
-              id="mint pack 3 button"
+            {isConnected ? (<button
+              id="mint pack 1 button"
               type="button"
-              className="mint-pack3-mint-pack-3-button mint-button button"
+              className="mint-pack1-mint-pack-1-button mint-button button"
               onClick={handleClick}
             >
               Mint for 0.1 ETH
+            </button>) : (
+              <button
+              id="mint pack 3 button"
+              type="button"
+              className="mint-pack3-mint-pack-3-button mint-button button disabled">
+              Please connect your wallet
             </button>
+            )}
             <a href="#item-of-this-pack" className="mint-pack3-link">
               See clothes here
             </a>
@@ -82,6 +93,9 @@ const MintPack3 = (props) => {
 
       <style jsx>
         {`
+          .disabled{
+            cursor: not-allowed;
+          }
           .mint-pack3-container {
             width: 100%;
             display: flex;
@@ -271,6 +285,8 @@ const MintPack3 = (props) => {
             }
             .mint-pack3-container3 {
               width: 70%;
+              height: auto;
+              padding-bottom: var(--dl-space-space-threeunits);
             }
             .mint-pack3-item-of-this-pack {
               padding-left: var(--dl-space-space-threeunits);
