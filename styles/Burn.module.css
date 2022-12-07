@@ -188,6 +188,26 @@
   font-weight: 700;
 }
 
+@media (max-width: 1030px) {
+  .blueContainer{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .burnContainer1{
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  .blueContainerRight {
+    width: 100%;
+  }
+  .blueContainerLeft {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
 @media (max-width: 850px) {
  .row{
     flex-direction: column;
@@ -237,7 +257,12 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  .burnText{
+    font-size: 40px;
+  }
+  .paragraph{
+    font-size: 14px;
+  }
   .container {
     flex-direction: column;
   }

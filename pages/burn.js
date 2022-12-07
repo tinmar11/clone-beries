@@ -389,17 +389,16 @@ const Burn = () => {
             </form>
           </div>
         ) : (
-          <div className={styles.container}>
-      <img
-        src="/assets/plug.webp"
-        className={styles.plug}
-      />
-      <div className={styles.connectContainer}>
-        <span className={styles.text1}>Connect your wallet</span>
-        <span className={styles.text2}>If you want go on this page.</span>
+      <div className={styles.container}>
+        <img
+          src="/assets/plug.webp"
+          className={styles.plug}
+        />
+        <div className={styles.connectContainer}>
+          <span className={styles.text1}>Connect your wallet</span>
+          <span className={styles.text2}>If you want go on this page.</span>
+        </div>
       </div>
-    </div>
-
         )}
         <Footer rootClassName="footer-root-class-name4"></Footer>
       </div>
