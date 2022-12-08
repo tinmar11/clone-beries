@@ -26,14 +26,13 @@ const MintPack4 = (props) => {
         <main id="mint pack 4 container" className="mint-pack4-container1">
           <div className="mint-pack4-container2">
             <img
-              alt="image"
               src="/assets/nft-boite-pack-4-1500h.webp"
-              className="mint-pack4-image"
+              className="packImage"
             />
           </div>
           <div className="mint-pack4-container3">
-            <h1 className="h1">Pack 4</h1>
-            <span className="mint-pack4-text1 paragraph">
+            <h1 className="packTitle">Pack 4</h1>
+            <span id="white" className="packDesc">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
             {isConnected ? (<button
@@ -60,7 +59,7 @@ const MintPack4 = (props) => {
           id="item-of-this-pack"
           className="mint-pack4-item-of-this-pack"
         >
-          <h1 className="mint-pack4-text2 H1">Item of this pack</h1>
+          <h2 id="white" className="h2">Item of this pack</h2>
           <div className="mint-pack4-container4">
             <div className="mint-pack4-container5">
               <img
@@ -68,7 +67,7 @@ const MintPack4 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack4-image1"
               />
-              <span className="mint-pack4-text3">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack4-container6">
               <img
@@ -76,7 +75,7 @@ const MintPack4 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack4-image2"
               />
-              <span className="mint-pack4-text4">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack4-container7">
               <img
@@ -84,7 +83,7 @@ const MintPack4 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack4-image3"
               />
-              <span className="mint-pack4-text5">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
           </div>
         </section>
@@ -163,7 +162,6 @@ const MintPack4 = (props) => {
             height: auto;
             display: flex;
             align-self: stretch;
-            margin-top: 40px;
             align-items: flex-start;
             padding-left: 140px;
             margin-bottom: 40px;
@@ -185,6 +183,8 @@ const MintPack4 = (props) => {
             align-self: stretch;
             align-items: flex-start;
             justify-content: center;
+            margin-top:20px;
+
           }
           .mint-pack4-container5 {
             flex: 1;
@@ -336,10 +336,12 @@ const MintPack4 = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
+              height: 100vh;
+
             }
             .mint-pack4-container2 {
               width: 100%;
-              height: 50%;
+              height: 30%;
             }
             .mint-pack4-image {
               height: auto;

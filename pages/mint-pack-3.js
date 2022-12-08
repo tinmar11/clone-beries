@@ -26,14 +26,13 @@ const MintPack3 = (props) => {
         <main id="mint pack 3 container" className="mint-pack3-container1">
           <div className="mint-pack3-container2">
             <img
-              alt="image"
               src="/assets/nft-boite-pack-3-1500h.webp"
-              className="mint-pack3-image"
+              className="packImage"
             />
           </div>
           <div className="mint-pack3-container3">
-            <h1 className="h1">Pack 3</h1>
-            <span className="mint-pack3-text1 paragraph">
+            <h2 className="packTitle">Pack 3</h2>
+            <span id="white" className="packDesc">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
             {isConnected ? (<button
@@ -68,7 +67,7 @@ const MintPack3 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack3-image1"
               />
-              <span className="mint-pack3-text3">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack3-container6">
               <img
@@ -76,7 +75,7 @@ const MintPack3 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack3-image2"
               />
-              <span className="mint-pack3-text4">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
             <div className="mint-pack3-container7">
               <img
@@ -84,7 +83,7 @@ const MintPack3 = (props) => {
                 src="/assets/tee burn-600w.png"
                 className="mint-pack3-image3"
               />
-              <span className="mint-pack3-text5">Item title</span>
+              <span id="white"className="itemTitle">Item title</span>
             </div>
           </div>
         </section>
@@ -163,7 +162,6 @@ const MintPack3 = (props) => {
             height: auto;
             display: flex;
             align-self: stretch;
-            margin-top: 40px;
             align-items: flex-start;
             padding-left: 140px;
             margin-bottom: 40px;
@@ -185,6 +183,8 @@ const MintPack3 = (props) => {
             align-self: stretch;
             align-items: flex-start;
             justify-content: center;
+            margin-top:20px;
+
           }
           .mint-pack3-container5 {
             flex: 1;
@@ -336,10 +336,12 @@ const MintPack3 = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
               flex-direction: column;
+              height: 100vh;
+
             }
             .mint-pack3-container2 {
               width: 100%;
-              height: 50%;
+              height: 30%;
             }
             .mint-pack3-image {
               height: auto;
