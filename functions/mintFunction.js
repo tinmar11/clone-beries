@@ -4,6 +4,7 @@ import {
     BERIES_CONTRACT_ADDRESS,
   } from "../constants/index";
   import { utils } from "ethers";
+
   
 export const mintFunction = async (tokenId, amount) => {
     try { 
@@ -18,8 +19,6 @@ export const mintFunction = async (tokenId, amount) => {
       const Mint = await contract.Mint(tokenId, amount, {
         value: utils.parseEther(value.toString()),
       });
-
-
       await Mint.wait();
         console.log("Minted");
     } catch (error) {

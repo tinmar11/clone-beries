@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import styles from "../styles/Burn.module.css";
+import styles from "../styles/Hoodlife.module.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
 import { useAccount, useBalance } from "wagmi";
@@ -179,65 +180,37 @@ const Hoodlife = () => {
 
         {isConnected ? (
           <div className={styles.div}>
-             <section id="Title" className={styles.burnContainer1}>
-          <h1 className={styles.burnText}>Burn for shipping</h1>
+        <section id="Title" className={styles.burnContainer1}>
+          <h1 className={styles.burnText}>HoodLife Club x BeRies</h1>
           <span className={styles.paragraph}>
             Burn your NFT to receive the BeRies pack you choose.
           </span>
         </section>
+        <div className={styles.whiteContainer}>
+          <div className={styles.ContainerRight}>
+              <img className={styles.tee} src="/assets/tee.png"  />  
+          </div>
+          <div className={styles.ContainerLeft}>
+              <img className={styles.hlclogo} src="/assets/hlclogo.png"  />
+                <button className={styles.mintButton} onClick={handleBurn}>
+                  Mint
+                </button>
+                <span className={styles.paragraph}>
+            Burn your NFT to receive the BeRies pack you choose.
+          </span>
+          </div>
+        </div>
             <div className={styles.blueContainer}>
-              <div className={styles.blueContainerRight}>
-                <div className={styles.burnInputContainer}>
-                  Pack 1 :
-                  <div>
-                    <input
-                      className={styles.burnInput}
-                      placeholder="...."
-                      onChange={handleInput1}
-                    ></input>
-                    /{userBalance[0]}
-                  </div>
-                </div>
-                <div className={styles.burnInputContainer}>
-                  Pack 2 :
-                  <div>
-                    <input
-                      className={styles.burnInput}
-                      placeholder="...."
-                      onChange={handleInput2}
-                    ></input>
-                    /{userBalance[1]}
-                  </div>
-                </div>
-                <div className={styles.burnInputContainer}>
-                  Pack 3 :
-                  <div>
-                    <input
-                      className={styles.burnInput}
-                      placeholder="...."
-                      onChange={handleInput3}
-                    ></input>
-                    /{userBalance[2]}
-                  </div>
-                </div>
-                <div className={styles.burnInputContainer}>
-                  Pack 4 :
-                  <div>
-                    <input
-                      className={styles.burnInput}
-                      placeholder="...."
-                      onChange={handleInput4}
-                    ></input>
-                    /{userBalance[3]}
-                  </div>
-                </div>
-              </div>
-              <div className={styles.blueContainerLeft}>
-                <h1>Choose wich NFTs to burn</h1>
+              <div className={styles.ContainerRight}>
+                <h1>Burn your NFT to access form</h1>
                 <button className={styles.burnButton} onClick={handleBurn}>
                   Burn
                 </button>
                 <p>If you already did, form is down below</p>
+                
+              </div>
+              <div className={styles.ContainerLeftImg}>
+                <img className={styles.hlcCharacter} src="/assets/beries2.png"  />
               </div>
             </div>
             <form

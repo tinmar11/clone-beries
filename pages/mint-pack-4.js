@@ -4,14 +4,82 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { mintFunction } from "../functions/mintFunction.js";
 import { useAccount, useBalance } from "wagmi";
+import { useEffect, useState } from "react";
+import { ethers } from "ethers";
+import { BERIES_CONTRACT_ABI, BERIES_CONTRACT_ADDRESS } from "../constants";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { utils } from "ethers";
 
 const MintPack4 = (props) => {
 
   const { address, isConnected } = useAccount();
+  const [minted3, setMinted3] = useState("x");
+
+  const mintFunction = async (tokenId, amount) => {
+    try {
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+    const contract = new ethers.Contract(
+      BERIES_CONTRACT_ADDRESS,
+      BERIES_CONTRACT_ABI,
+      signer
+      );
+      const value = 0.001 * amount;
+      const Mint = await contract.Mint(tokenId, amount, {
+        value: utils.parseEther(value.toString()),
+      });
+      await Mint.wait();
+        console.log("Minted");
+        getMinted();
+        toast.success('Minted !', {
+          position: "bottom-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+    } catch (error) {
+      toast.error('Something went wrong', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        });
+        console.log(error);
+    }
+}
+
+  const getMinted = async () => {
+    try {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+      const contract = new ethers.Contract(
+        BERIES_CONTRACT_ADDRESS,
+        BERIES_CONTRACT_ABI,
+        signer
+      );
+        const minted = await contract.minted(3);
+        setMinted3(ethers.utils.formatUnits(minted, 0));
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleClick = () => {
     mintFunction(3, 1);
   };
+
+  useEffect(() => {
+    getMinted();
+  }, [isConnected]);
 
   return (
     <>
@@ -35,6 +103,9 @@ const MintPack4 = (props) => {
             <span id="white" className="packDesc">
               1 Tee - 1 Hoodie - 1 Cap
             </span>
+            <span id="white"className="packDesc">
+            {parseInt(minted3) + 1} / 11 minted
+          </span>
             {isConnected ? (<button
               id="mint pack 4 button"
               type="button"
@@ -88,6 +159,19 @@ const MintPack4 = (props) => {
           </div>
         </section>
       </div>
+      <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+          limit={1}
+          />
       <Footer rootClassName="footer-root-class-name"></Footer>
 
       <style jsx>
